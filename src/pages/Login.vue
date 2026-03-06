@@ -33,7 +33,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import logo from '../assets/CPTM.png'
+import logo from '../assets/cptm.png'
 
 const router = useRouter()
 const email = ref('')
