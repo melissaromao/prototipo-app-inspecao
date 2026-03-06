@@ -12,16 +12,21 @@
                     <p class="text-gray-600 mt-2">{{ localizacao }}</p>
                 </div>
                 <div class="flex space-x-2 md:space-x-4">
-                    <button @click="logout" class="bg-red-600 text-white px-3 md:px-4 py-2 rounded-xl hover:bg-red-700 transition text-sm md:text-base">
+                    <button @click="" class="bg-cyan-600 text-white px-3 md:px-4 py-2 rounded-xl hover:bg-cyan-700 transition text-sm md:text-base cursor-pointer">
+                        Grupo de Trabalho
+                    </button>
+                    <button @click="logout" class="bg-red-600 text-white px-3 md:px-4 py-2 rounded-xl hover:bg-red-700 transition text-sm md:text-base cursor-pointer">
                         Sair
                     </button>
                 </div>
+
             </div>
 
             <div class="border-b-2 border-gray-300 mb-8"></div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div @click="$router.push('/new-inspection')" class="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition cursor-pointer">
+                <div @click="$router.push('/new-inspection')"
+                    class="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition cursor-pointer">
                     <div class="flex items-center justify-center mb-4">
                         <div class="bg-blue-100 rounded-full p-4">
                             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,7 +39,8 @@
                     <p class="text-gray-600 text-center mt-2">Iniciar uma nova inspeção</p>
                 </div>
 
-                <div @click="$router.push('/my-inspections')" class="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition cursor-pointer">
+                <div @click="$router.push('/my-inspections')"
+                    class="bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition cursor-pointer">
                     <div class="flex items-center justify-center mb-4">
                         <div class="bg-green-100 rounded-full p-4">
                             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
